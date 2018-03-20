@@ -1,0 +1,28 @@
+package javaGame;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CharToAscii_2 {
+	//string to ascii 
+	public static void main(String[] args) {
+		
+		String str="Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production";
+		List listA = new ArrayList<>();
+		
+		String result = "";
+		int intResult;
+		String temp ;
+
+		System.out.println(result);
+		for(int i = 0; i < str.length(); i++) {
+			
+			intResult= (int)str.charAt(i);
+			listA.add(intResult);
+			
+		}
+		System.out.println(listA);
+		
+	}
+
+}
