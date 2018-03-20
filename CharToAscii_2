@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CharToAscii_2 {
-	//string to ascii 
+	//string to ascii program
 	public static void main(String[] args) {
 		
 		String str="Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production";
