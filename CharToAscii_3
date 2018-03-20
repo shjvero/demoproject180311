@@ -1,0 +1,30 @@
+package javaGame;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class CharToAscii_3 {
+	//string to ascii with user input 
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		String input = scan.nextLine();
+		System.out.println(input);
+		
+		String scanResult="";
+		
+		int intTemp;
+		
+		for(int i = 0; i < input.length(); i++) {
+			intTemp = (int)(input.charAt(i));
+			scanResult+= "("+intTemp+")||";
+			//System.out.println(scanResult);
+		}
+		//System.out.println("============");
+		scanResult = scanResult.substring(0,scanResult.lastIndexOf('|')-1);
+		System.out.println(scanResult);
+	}
+
+}
